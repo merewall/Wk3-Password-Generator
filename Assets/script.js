@@ -30,6 +30,7 @@ function writePassword() {
   }
 
   // Create arrays of each set of character types for employee to elect into the password
+  // Consulted (https://w3schools.sinsixx.com/js/js_special_characters.asp.htm#:~:text=In%20JavaScript%20you%20can%20add,by%20using%20the%20backslash%20sign) for how to put special characters into strings
   const lowerCharset = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y','z'];
   const upperCharset = ['A','B','C','D','E','F','G','H','I','J','K','L','M','N','O','P','Q','R','S','T','U','V','W','X','Y','Z'];
   const numCharset = ['0','1','2','3','4','5','6','7','8','9']
@@ -38,6 +39,10 @@ function writePassword() {
   // Create an array of characters combining lowercase, uppercase, numeric and/or special characters
   // based on the employee's inputs to the prompts.
   // The resulting array will be used as the character set from which a random character will be generated
+  // Consulted W3Schools and MDN Web Docs for how to create an empty array and push other arrays into it
+  // (https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/push)
+  //https://www.w3schools.com/js/js_arrays.asp
+  
   const chosenCharset = new Array();
   if (lowerAnswer == true) {
     chosenCharset.push.apply(chosenCharset, lowerCharset)
