@@ -18,10 +18,10 @@ function writePassword() {
     }
   
   // Create pop-up confirmation boxes for the employee to select which character types they want in the password
-  let lowerAnswer = confirm("Do you want to use some lowercase characters?");
-  let upperAnswer = confirm("Do you want to use some uppercase characters?");
-  let numericAnswer = confirm("Do you want to use numerical characters?");
-  let specialAnswer = confirm("Do you want to use special characters?");
+  let lowerAnswer = confirm("Do you want to use some lowercase characters? (OK = yes; Cancel = no)");
+  let upperAnswer = confirm("Do you want to use some uppercase characters? (OK = yes; Cancel = no)");
+  let numericAnswer = confirm("Do you want to use numerical characters? (OK = yes; Cancel = no)");
+  let specialAnswer = confirm("Do you want to use special characters? (OK = yes; Cancel = no)");
 
   // Make sure employee selects at least one character type, and if not, reload page to re-set prompts/generator
   if (lowerAnswer == false && upperAnswer == false && numericAnswer == false && specialAnswer == false) {

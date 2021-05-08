@@ -34,7 +34,7 @@ The following image shows the web application's appearance and functionality:
 ## Deployed Application Link
 
 The deployed GitHub page for this web application can be found: 
-https://github.com/merewall/Wk3-Password-Generator
+https://merewall.github.io/Wk3-Password-Generator/
 
 The GitHub repository for this web application can be found:
-https://merewall.github.io/Wk3-Password-Generator/
+https://github.com/merewall/Wk3-Password-Generator
